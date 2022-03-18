@@ -1,0 +1,171 @@
+:root {
+    --primary-color:rgb(67, 114, 186);
+    --hot-color:rgb(221, 28, 67);
+    --primary-color-middle:rgb(123, 156, 207);
+    --primary-color-middle-fade:rgba(123, 157, 207, 0.49);
+    --primary-color-light:rgb(237, 247, 255);
+    --primary-color-light-II:rgb(210, 228, 255);
+    --secondary-color:rgb(255, 138, 0);
+    --secondary-color-light:rgb(255, 199, 0);
+    --Dark-color:rgb(51, 51, 51);
+    --lightest-color:rgb(255, 255, 255);
+    --lightest-color-fade:rgba(255, 255, 255, 0.7);
+    --lightest-color-fade-II:rgba(255, 255, 255, 0.43);
+    --dark-Grey-color:rgb(108, 108, 108);
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    font-family: 'nunito', 'poppins',helvetica, sans-serif;
+    font-size: 16px;
+    background-color: var(--primary-color-light);
+    color: var(--Dark-color);
+    overflow-x: hidden;
+    padding: 32px 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 40px 0 32px 0;
+}
+
+.title {
+    font-size: 4rem;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.title span{
+    color: var(--secondary-color);
+}
+
+.cityCountry {
+    font-size: 2rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    background-color: var(--primary-color-light);
+    box-shadow: 5px 5px 10px var(--primary-color-middle-fade), -5px -5px 10px var(--lightest-color);
+    color: var(--primary-color);
+    border-radius: 12px;
+    padding: 0 18px;
+}
+
+.search input {
+    width: 100%;
+    font-size: 18px;
+    border: 0;
+    padding: 18px 0;
+    background-color: transparent;
+    outline: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.noCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.card {
+    width: 209px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px;
+    box-shadow: 5px 5px 10px var(--primary-color-middle-fade), -5px -5px 10px var(--lightest-color);
+    border-radius: 16px;
+}
+
+.cardBig{
+    width: 330px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px;
+    box-shadow: 5px 5px 10px var(--primary-color-middle-fade), -5px -5px 10px var(--lightest-color);
+    border-radius: 16px;
+}
+
+.infoBigBlue {
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+.infoBigRed {
+    font-size: 4rem;
+    color: var(--hot-color);
+}
+
+.infoBigBlack {
+    font-size: 4rem;
+    color: var(--dark-color);
+}
+
+.info {
+    font-size: 3rem;
+    color: var(--primary-color-middle);
+}
+
+.smallTitle {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.innerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.bodyText {
+    color: var(--Dark-color);
+}
+
+.bodyTextRed {
+    color: var(--hot-color);
+}
+
+.bodyTextBlue {
+    color: var(--primary-color);
+}
